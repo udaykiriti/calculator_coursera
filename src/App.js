@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import "./App.css"; // Optional for custom styling
 
 function App() {
-  // States for input value and result
   const [input, setInput] = useState("");
   const [result, setResult] = useState(0);
 
-  // Function to handle input change
   const handleInputChange = (e) => {
     setInput(e.target.value);
   };
 
-  // Functions for calculator operations
   const add = () => setResult(result + Number(input));
   const subtract = () => setResult(result - Number(input));
   const multiply = () => setResult(result * Number(input));
@@ -23,7 +20,6 @@ function App() {
     }
   };
 
-  // Function to reset input and result
   const resetInput = () => setInput("");
   const resetResult = () => setResult(0);
 
