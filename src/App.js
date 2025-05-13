@@ -19,7 +19,7 @@ function App() {
       alert("Cannot divide by zero");
     }
   };
-
+  
   const resetInput = () => setInput("");
   const resetResult = () => setResult(0);
 
